@@ -36,3 +36,6 @@ pom.xml.versionsBackup
 release.properties
 node_modules
 package-lock.json
+
+# Svelte
+src/main/resources/META-INF/resources/build/
