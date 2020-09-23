@@ -5,7 +5,6 @@
  */
 package io.github.tncrazvan.quarkus.tools.system;
 
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 

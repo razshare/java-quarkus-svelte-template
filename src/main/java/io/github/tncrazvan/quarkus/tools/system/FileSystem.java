@@ -6,13 +6,14 @@ import io.github.tncrazvan.quarkus.tools.action.CompleteAction;
 
 
 /**
- *
+ * This interface contains few methods that manipulate the file system.
  * @author Razvan Tanase
  */
 public interface FileSystem {
     /**
-     * Explore the contents of a directory and calls a WorkspaceAction funcitonal interface while iterating files.
-     * NOTE: retusn immediately without warning if the provided resource is not a valid directory.
+     * Explores the contents of a directory and calls a CompleteAction functional interface while iterating files.<br />
+     * NOTE: returns immediately without warning if the provided resource is not a valid directory.<br />
+     * If the CompleteAction callback returns false, the iteration will stop.
      * @param dir directory to explore
      * @param recursive is true, then the method will be evaluated recursively for each subgroups of directories inside the provided directory.
      * @param action the action to execute for each encountered file.
@@ -22,8 +23,9 @@ public interface FileSystem {
     }
 
     /**
-     * Explore the contents of a directory and calls a WorkspaceAction funcitonal interface while iterating files.
-     * NOTE: retusn immediately without warning if the provided resource is not a valid directory.
+     * Explore the contents of a directory and calls a CompleteAction functional interface while iterating files.<br />
+     * NOTE: returns immediately without warning if the provided resource is not a valid directory.<br />
+     * If the CompleteAction callback returns false, the iteration will stop.
      * @param dir directory to explore.
      * @param recursive is true, then the method will be evaluated recursively for each subgroups of directories inside the provided directory.
      * @param action the action to execute for each encountered file.
@@ -50,8 +52,7 @@ public interface FileSystem {
     }
     
     /**
-     * Removes the given directory.
-     * 
+     * Removes the given directory and all its contents recursively.
      * @param directory directory to be removed.
      */
     public static void rmdir(final File directory) {

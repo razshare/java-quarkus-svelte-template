@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package io.github.tncrazvan.quarkus.tools.system;
 
 import io.github.tncrazvan.quarkus.tools.SharedObject;
 
 /**
- *
+ * This interface contains a few methods that provide details regarding the JVM runtime resources.
  * @author Razvan Tanase
  */
 public interface Memory {
