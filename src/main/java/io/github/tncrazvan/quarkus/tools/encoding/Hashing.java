@@ -164,7 +164,7 @@ public interface Hashing {
      * Encodes the value to BCrypt. Note that encoding the same value twice will
      * generate a different BCrypt string. This means you cannot simply check two
      * encoded string to find out if they were generated from the same value like
-     * Sha1. Use Server#validateBCryptString to validate an encoded strings.
+     * Sha1. Use Hashing#validateBCryptString to validate an encoded strings.
      * 
      * @param value input String.
      * @return encoded String.

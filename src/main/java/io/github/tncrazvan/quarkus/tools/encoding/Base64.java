@@ -46,7 +46,7 @@ public interface Base64 {
         } catch (final UnsupportedEncodingException ex) {
             LOGGER.log(Level.WARNING, null, ex);
         }
-        return null;
+        return new byte[0];
     }
 
     /**
@@ -72,7 +72,7 @@ public interface Base64 {
         } catch (final UnsupportedEncodingException ex) {
             LOGGER.log(Level.WARNING, null, ex);
         }
-        return null;
+        return "";
     }
 
     /**
@@ -88,7 +88,7 @@ public interface Base64 {
         } catch (final UnsupportedEncodingException ex) {
             LOGGER.log(Level.WARNING, null, ex);
         }
-        return null;
+        return "";
     }
 
     /**
@@ -104,7 +104,7 @@ public interface Base64 {
         } catch (final UnsupportedEncodingException ex) {
             LOGGER.log(Level.WARNING, null, ex);
         }
-        return null;
+        return new byte[0];
     }
 
     /**
