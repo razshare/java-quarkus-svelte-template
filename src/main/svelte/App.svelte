@@ -1,4 +1,4 @@
-<script lang="ts">
-let var1:string = "world";
+<script>
+let var1 = "world";
 </script>
 hello {var1}!

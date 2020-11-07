@@ -1,10 +1,10 @@
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
+import io.quarkus.runtime.Quarkus;
+import io.quarkus.runtime.annotations.QuarkusMain;
 
-@Path("hello-world")
+@QuarkusMain
 public class Starter {
-    @GET
-    public String run(){
-        return "hello world";
+    public static void main(String[] args) {
+        System.out.println("Running main method");
+        Quarkus.run(args); 
     }
 }
